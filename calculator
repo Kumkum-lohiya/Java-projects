@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class calculator {
+   public static void main(String[] s)
+   {
+       int a,b;
+       float pi = 3.14F;
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter First Number :");
+       a = sc.nextInt();
+       System.out.println("Enter Second Number :");
+       b = sc.nextInt();
+       System.out.println("sum is "+(a+b));
+       System.out.println("Sub is "+(a-b));
+       System.out.println("multi is "+(a*b));
+       System.out.println("division is "+((float)a/b));
+       System.out.println("sum is "+(a%b));
+
+       System.out.println("Area of Circle "+(pi*a*a));
+
+
+   }
+
+
+}
