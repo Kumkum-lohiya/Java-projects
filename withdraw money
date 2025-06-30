@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class withdraw {
+    public static void main(String[] s)
+    {
+        int amt;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the amount :");
+        amt=sc.nextInt();
+        System.out.println("2000 notes :" + amt / 2000);
+        amt = amt % 2000;
+        System.out.println("2000 notes :" + amt / 500);
+        amt = amt % 500;
+        System.out.println("2000 notes :" + amt / 200);
+        amt = amt % 200;
+        System.out.println("2000 notes :" + amt / 100);
+        amt = amt % 100;
+        System.out.println("2000 notes :" + amt / 50);
+        amt = amt % 50;
+        System.out.println("2000 notes :" + amt / 20);
+        amt = amt % 20;
+        System.out.println("2000 notes :" + amt / 10);
+        amt = amt % 10;
+        System.out.println("2000 notes :" + amt / 5);
+        amt = amt % 5;
+
+
+    }
+
+
+}
