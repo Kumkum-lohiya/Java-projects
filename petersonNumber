@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class petersonNumber {
+
+
+    private static int factorial(int rem) {
+        if(rem == 0 || rem ==1)
+            return 1;
+        else
+            return rem * factorial(rem-1);
+    }
+
+    public static void main(String[] s)
+    {
+        Scanner sc = new Scanner(System.in);
+        int n;
+        System.out.println("Enter any number ");
+        n = sc.nextInt();
+        int sum = 0;
+        int original = n;
+
+        while(n!=0)
+        {
+            int rem = n%10;
+            sum += factorial(rem);
+            n = n/10;
+        }
+       if(sum == original)
+           System.out.println(original + " is a Peterson Number");
+       else System.out.println(original + " is not a Peterson Number");
+    }
+
+}
