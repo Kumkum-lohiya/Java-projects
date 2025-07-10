@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+import static java.lang.Math.*;
+
+public class SunnyNumber {
+    public static void main(String[] s)
+    {
+        Scanner sc = new Scanner(System.in);
+        int n;
+        System.out.println("Enter any number ");
+        n = sc.nextInt();
+        int num = n + 1;
+        double sr = sqrt(num);
+        if(sr == Math.floor(sr))
+        {
+            System.out.println(n +" is a sunny number ");
+        }
+        else System.out.println(n +" is not a sunny number");
+    }
+
+}
