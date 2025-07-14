@@ -1,0 +1,28 @@
+import java.awt.*;
+import java.util.Scanner;
+
+public class NeonNumber {
+    public static void main(String[] s)
+    {
+        Scanner sc = new Scanner(System.in);
+        int num,rem;
+        int sum =0;
+        System.out.println("Enter any number");
+        num = sc.nextInt();
+        int sqr = num*num;
+        while(sqr>0)
+        {
+            rem = sqr%10;
+            sum += rem;
+            sqr = sqr/10;
+        }
+        if(sum == num)
+        {
+            System.out.println(num+" is a Neon Number ");
+        }
+        else {
+            System.out.println(num+" is not a Neon Number");
+        }
+
+    }
+}
