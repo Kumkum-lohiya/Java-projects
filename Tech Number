@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class TechNumber {
+    public static void main(String[] s)
+    {
+        Scanner sc = new Scanner(System.in);
+        int num;
+        System.out.println("Enter any Number :");
+        num = sc.nextInt();
+        int count =0;
+        int temp = num;
+        int original = num;
+        while(temp > 0)
+        {
+            count++;
+            temp = temp/10;
+        }
+
+        if(count % 2!= 0)
+        {
+            System.out.println("It is not a Tech Number ");
+        }
+        else {
+            int first = (int) (num %(Math.pow(10,( count /2))));
+            int second = (int) (num /(Math.pow(10,( count /2))));
+            int sum = first + second;
+            int sqr = sum*sum;
+            if(sqr == original)
+            {
+                System.out.println("It is a Tech Number ");
+            }
+            else{
+                System.out.println("It is not a  Tech Number ");
+            }
+        }
+    }
+
+}
